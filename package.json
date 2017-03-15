@@ -1,0 +1,22 @@
+{
+  "name": "boards",
+  "version": "0.0.0",
+  "description": "You'll see.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/SpoonX/boards.git"
+  },
+  "keywords": [
+    "sx"
+  ],
+  "author": "RWOverdijk <wesley@spoonx.nl>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/SpoonX/boards/issues"
+  },
+  "homepage": "https://github.com/SpoonX/boards#readme"
+}
