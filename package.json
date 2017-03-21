@@ -1,6 +1,6 @@
 {
   "name": "boards",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "You'll see.",
   "main": "index.js",
   "scripts": {
@@ -11,12 +11,18 @@
     "url": "git+ssh://git@github.com/SpoonX/boards.git"
   },
   "keywords": [
-    "sx"
+    "sx", "boards", "generator"
   ],
   "author": "RWOverdijk <wesley@spoonx.nl>",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/SpoonX/boards/issues"
   },
-  "homepage": "https://github.com/SpoonX/boards#readme"
+  "homepage": "https://github.com/SpoonX/boards#readme",
+  "dependencies": {
+    "homefront": "^1.3.3",
+    "procurator": "^1.0.1",
+    "request": "^2.81.0",
+    "stream-replace": "^1.0.0"
+  }
 }
