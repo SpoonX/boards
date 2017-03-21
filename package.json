@@ -11,7 +11,9 @@
     "url": "git+ssh://git@github.com/SpoonX/boards.git"
   },
   "keywords": [
-    "sx", "boards", "generator"
+    "sx",
+    "boards",
+    "generator"
   ],
   "author": "RWOverdijk <wesley@spoonx.nl>",
   "license": "MIT",
@@ -21,6 +23,7 @@
   "homepage": "https://github.com/SpoonX/boards#readme",
   "dependencies": {
     "homefront": "^1.3.3",
+    "mkdirp": "^0.5.1",
     "procurator": "^1.0.1",
     "request": "^2.81.0",
     "stream-replace": "^1.0.0"
