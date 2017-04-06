@@ -1,4 +1,4 @@
-const {Boards} = require('./lib/Boards');
-const {Board}  = require('./lib/Board');
+const {Boards}     = require('./lib/Boards');
+const {Generator}  = require('./lib/Generator');
 
-module.exports = {Boards, Board};
+module.exports = {Boards, Generator};

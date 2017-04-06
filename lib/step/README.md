@@ -22,6 +22,12 @@ _**Note:** Every generator gets to supply default values for these parameters; t
 
 ### Replace
 The replace step allows the use of variables in your templates.
+Replace uses a tiny lib called [Procurator](https://github.com/SpoonX/procurator), take a look at the docs to know what's possible.
+To give you an idea:
+
+```html
+<strong>Hello {{name:world}}</strong>
+```
 
 ### Write
 The write step is generally the last step in a generator's flow and us responsible for writing the file to disk.
