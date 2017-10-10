@@ -1,3 +1,13 @@
+<a name="2.0.0-1"></a>
+# [2.0.0-1](https://github.com/SpoonX/boards/compare/v2.0.0-0...v2.0.0-1) (2017-10-10)
+
+
+### Bug Fixes
+
+* **generators:** export correct property ([fcad025](https://github.com/SpoonX/boards/commit/fcad025))
+
+
+
 <a name="2.0.0-0"></a>
 # [2.0.0-0](https://github.com/SpoonX/boards/compare/v0.0.4...v2.0.0-0) (2017-10-10)
 
