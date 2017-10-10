@@ -86,10 +86,11 @@ The modification generator included runs the following steps:
 
 - read
 - modify
+- replace
 - write
 - move
 
-This is useful to quickly edit existing files in your project.
+This is useful to quickly edit existing files in your project and also allows using parameters in your replacement strings!
 Read the docs on steps below to find out how to use them.
 
 ### Custom generator
