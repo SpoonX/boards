@@ -1,3 +1,18 @@
+<a name="2.0.0"></a>
+# [2.0.0](https://github.com/SpoonX/boards/compare/v2.0.0-1...v2.0.0) (2017-10-10)
+
+
+### Bug Fixes
+
+* **modify:** allow objects for patches ([331f961](https://github.com/SpoonX/boards/commit/331f961))
+
+
+### Features
+
+* **ModificationGenerator:** use replace step to allow templating in replacements and targets ([5375625](https://github.com/SpoonX/boards/commit/5375625))
+
+
+
 <a name="2.0.0-1"></a>
 # [2.0.0-1](https://github.com/SpoonX/boards/compare/v2.0.0-0...v2.0.0-1) (2017-10-10)
 
