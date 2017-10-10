@@ -55,7 +55,46 @@ _**Note:** Options for plugin discovery [can be found here](https://github.com/S
 
 ## Generator
 
-A generator is responsible for generating a file, and supplying the steps to do so. Here's an example (skeleton) generator.
+A generator is responsible for generating or manipulating a file, and supplying the steps to do so.
+
+### Default generators
+
+This project comes with two default generators that can be extended or utilized.
+
+#### TemplateGenerator
+
+```js
+const {ModificationGenerator} = require('boards');
+```
+
+This is probably the easiest a generator gets. It runs the following steps:
+
+- read
+- replace
+- write
+
+This generator is useful for copying template files into your project.
+Because the replace step uses Procurator for templating, you can make your templates dynamic.
+
+#### ModificationGenerator
+
+```js
+const {TemplateGenerator} = require('boards');
+```
+
+The modification generator included runs the following steps:
+
+- read
+- modify
+- write
+- move
+
+This is useful to quickly edit existing files in your project.
+Read the docs on steps below to find out how to use them.
+
+### Custom generator
+
+Here's an example (skeleton) generator to give you an idea of what is involved.
 
 ```js
 const {Generator} = require('boards');
@@ -145,3 +184,60 @@ There are a couple of parameters you can pass in to change the behavior of this 
 | targetDirectory | string | `''` | Where to store the generated file |
 | targetFile | string | `''` | The name of the target file |
 | target | string | `directory + file` | Combined parameter based on targetDirectory and targetFile |
+
+### Modify
+
+The modify step allows you to modify existing files in your project. This is useful when adding routes for example.
+
+#### Parameters
+
+To modify a file, use the `modify` property in the parameters.
+
+`{modify: {patch: [{pattern, append, prepend, custom}]}`
+
+|  Key          | Type  | Default | Description |
+|:--------------|:------|:--------|:------------|
+| patch | {}/{}[] | `''` | Patch instructions (object or array of objects) |
+| patch.pattern | RegExp | `undefined` | Pattern to apply replacement on |
+| patch.append | string | `undefined` | (optional) what to append to match |
+| patch.prepend | string | `undefined` | (optional) what to prepend to match |
+| patch.custom | function | `undefined` | (optional) callback for replace (uses [stream-replace](https://npmjs.com/package/stream-replace)) |
+
+#### Example
+
+```js
+parameters.modify = {
+  patch: {
+    pattern: /];\s*module/,
+    prepend: `  '${name}',\n`
+  }
+};
+```
+
+### Move
+
+The move step allows you to move a file. This is useful in combination with the `modify` step.
+
+#### Parameters
+
+To move a file, use the `move` property in the parameters.
+
+`{move: {sourceFile, targetFile}}`
+
+|  Key          | Type  | Default | Description |
+|:--------------|:------|:--------|:------------|
+| sourceFile | string | `''` | Full path to the file to move |
+| targetFile | string | `''` | Full path to the new location |
+
+#### Example
+
+```js
+parameters.move = {
+  sourceFile: path.join(parameters.sourceDirectory, parameters.targetFile),
+  targetFile: path.join(parameters.sourceDirectory, parameters.sourceFile)
+};
+```
+
+## Licence
+
+MIT
