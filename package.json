@@ -1,6 +1,6 @@
 {
   "name": "boards",
-  "version": "2.0.0",
+  "version": "3.0.0",
   "description": "Code generators made easy, and flexible.",
   "main": "index.js",
   "scripts": {

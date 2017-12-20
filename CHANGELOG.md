@@ -1,3 +1,13 @@
+<a name="3.0.0"></a>
+# [3.0.0](https://github.com/SpoonX/boards/compare/v2.0.0...v3.0.0) (2017-12-20)
+
+
+### Features
+
+* **project:** add format step ([d8cc354](https://github.com/SpoonX/boards/commit/d8cc354))
+
+
+
 <a name="2.0.0"></a>
 # [2.0.0](https://github.com/SpoonX/boards/compare/v2.0.0-1...v2.0.0) (2017-10-10)
 
