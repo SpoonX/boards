@@ -1,19 +1,24 @@
 # Boards
 
-An opinionated, simple, minimalistic and extendible code generator base.
+A minimalistic and extendable code generator/manipulator base.
 
-This module makes it easy to use generators, and doesn't provide a cli to do so.
+This project allows you to generate and manipulate code easily, making it a breeze to build your own cli.
 This means you can embed it your own cli tool without having to call extra tools (gulp, yo, etc).
 
-This module makes use of [plugin-discovery](https://github.com/SpoonX/plugin-discovery) to discover plugins in your projects.
+An (very cool, try it) example can be found here: [Boards-cli](https://github.com/SpoonX/boards-cli).
+
+Boards makes use of [plugin-discovery](https://github.com/SpoonX/plugin-discovery) to discover plugins in your projects.
 
 ## Features
 
+* Code formatting **New!**
 * Register boards
 * Generators
 * Register steps
 * Manages stream
 * Finds boards in project dependencies
+
+As of v3, Boards allows you to automatically format code when using the default generators (Modification and Template). To do this, it uses prettier to do base formatting, and then applies eslint rules (using `cwd`) to make any code adjust to whatever project it's being used in. To enable this option, set `format` to true. Read more [in the format section of the readme](#format)
 
 ## Installation
 
@@ -72,6 +77,7 @@ This is probably the easiest a generator gets. It runs the following steps:
 - read
 - replace
 - write
+- format
 
 This generator is useful for copying template files into your project.
 Because the replace step uses Procurator for templating, you can make your templates dynamic.
@@ -89,6 +95,7 @@ The modification generator included runs the following steps:
 - replace
 - write
 - move
+- format
 
 This is useful to quickly edit existing files in your project and also allows using parameters in your replacement strings!
 Read the docs on steps below to find out how to use them.
@@ -229,6 +236,31 @@ To move a file, use the `move` property in the parameters.
 |:--------------|:------|:--------|:------------|
 | sourceFile | string | `''` | Full path to the file to move |
 | targetFile | string | `''` | Full path to the new location |
+
+#### Example
+
+```js
+parameters.move = {
+  sourceFile: path.join(parameters.sourceDirectory, parameters.targetFile),
+  targetFile: path.join(parameters.sourceDirectory, parameters.sourceFile)
+};
+```
+
+### Format
+
+The format step allows you to format the file used in a generator.
+
+**Note:** Formatting should be applied _after_ the write step.
+
+#### Parameters
+
+To format a file, use the `format` property in the parameters.
+
+`{format: true`
+
+|  Key          | Type  | Default | Description |
+|:--------------|:------|:--------|:------------|
+| format | boolean | `false` | Flag indicating if formatting should be applied |
 
 #### Example
 
