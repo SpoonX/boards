@@ -265,10 +265,7 @@ To format a file, use the `format` property in the parameters.
 #### Example
 
 ```js
-parameters.move = {
-  sourceFile: path.join(parameters.sourceDirectory, parameters.targetFile),
-  targetFile: path.join(parameters.sourceDirectory, parameters.sourceFile)
-};
+parameters.format = true;
 ```
 
 ## Licence
