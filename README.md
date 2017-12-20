@@ -256,7 +256,7 @@ The format step allows you to format the file used in a generator.
 
 To format a file, use the `format` property in the parameters.
 
-`{format: true`
+`{format: true}`
 
 |  Key          | Type  | Default | Description |
 |:--------------|:------|:--------|:------------|
