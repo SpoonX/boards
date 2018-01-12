@@ -1,3 +1,13 @@
+<a name="3.1.0"></a>
+# [3.1.0](https://github.com/SpoonX/boards/compare/v3.0.0...v3.1.0) (2018-01-12)
+
+
+### Features
+
+* **Boards:** expose plugins ([910ebd8](https://github.com/SpoonX/boards/commit/910ebd8))
+
+
+
 <a name="3.0.0"></a>
 # [3.0.0](https://github.com/SpoonX/boards/compare/v2.0.0...v3.0.0) (2017-12-20)
 
