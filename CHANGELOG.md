@@ -1,3 +1,8 @@
+<a name="3.1.3"></a>
+## [3.1.3](https://github.com/SpoonX/boards/compare/v3.1.2...v3.1.3) (2018-02-01)
+
+
+
 <a name="3.1.2"></a>
 ## [3.1.2](https://github.com/SpoonX/boards/compare/v3.1.1...v3.1.2) (2018-01-26)
 
