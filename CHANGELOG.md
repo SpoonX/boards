@@ -1,3 +1,13 @@
+<a name="3.1.4"></a>
+## [3.1.4](https://github.com/SpoonX/boards/compare/v3.1.3...v3.1.4) (2018-02-07)
+
+
+### Bug Fixes
+
+* **Boards:** wait for write to finish before moving to the next step ([123c617](https://github.com/SpoonX/boards/commit/123c617))
+
+
+
 <a name="3.1.3"></a>
 ## [3.1.3](https://github.com/SpoonX/boards/compare/v3.1.2...v3.1.3) (2018-02-01)
 
