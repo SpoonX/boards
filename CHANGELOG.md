@@ -1,3 +1,13 @@
+<a name="3.1.5"></a>
+## [3.1.5](https://github.com/SpoonX/boards/compare/v3.1.4...v3.1.5) (2018-04-10)
+
+
+### Bug Fixes
+
+* **format:** format the target file not the source file ([f0f5d98](https://github.com/SpoonX/boards/commit/f0f5d98))
+
+
+
 <a name="3.1.4"></a>
 ## [3.1.4](https://github.com/SpoonX/boards/compare/v3.1.3...v3.1.4) (2018-02-07)
 
