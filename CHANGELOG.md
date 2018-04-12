@@ -1,3 +1,13 @@
+<a name="3.2.1"></a>
+## [3.2.1](https://github.com/SpoonX/boards/compare/v3.2.0...v3.2.1) (2018-04-12)
+
+
+### Bug Fixes
+
+* **project:** format correct file ([0011f2c](https://github.com/SpoonX/boards/commit/0011f2c))
+
+
+
 <a name="3.2.0"></a>
 # [3.2.0](https://github.com/SpoonX/boards/compare/v3.1.5...v3.2.0) (2018-04-12)
 
