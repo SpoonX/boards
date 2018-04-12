@@ -82,6 +82,19 @@ This is probably the easiest a generator gets. It runs the following steps:
 This generator is useful for copying template files into your project.
 Because the replace step uses Procurator for templating, you can make your templates dynamic.
 
+#### CopyGenerator
+
+```js
+const {CopyGenerator} = require('boards');
+```
+
+This generator performs a quick and easy copy using the following steps:
+
+- read
+- write
+
+This generator is useful for copying static files into your project (think assets, images etc).
+
 #### ModificationGenerator
 
 ```js
