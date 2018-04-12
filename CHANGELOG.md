@@ -1,3 +1,13 @@
+<a name="3.2.0"></a>
+# [3.2.0](https://github.com/SpoonX/boards/compare/v3.1.5...v3.2.0) (2018-04-12)
+
+
+### Features
+
+* **project:** add CopyGenerator ([5168e13](https://github.com/SpoonX/boards/commit/5168e13))
+
+
+
 <a name="3.1.5"></a>
 ## [3.1.5](https://github.com/SpoonX/boards/compare/v3.1.4...v3.1.5) (2018-04-10)
 
